@@ -180,6 +180,10 @@ MonoBehaviour:
   animSmoothing: 0.1
   prefabHitBox: {fileID: 1492197470897404969, guid: 2aab2c84e516884488fd600f86eeffd4,
     type: 3}
+  FootStepEvent: event:/Player/Footstep
+  JumpEvent: event:/Player/Jump
+  RollEvent: event:/Player/Roll
+  DamagedEvent: event:/Player/PlayerDamaged
 --- !u!114 &9137856363831231972
 MonoBehaviour:
   m_ObjectHideFlags: 0

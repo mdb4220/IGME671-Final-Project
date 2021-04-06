@@ -28,6 +28,10 @@ public class HitBox : MonoBehaviour
     public float knockbackAmount = 0;
     public Vector3 knockbackdir = Vector3.zero;
 
+    //Sound
+    [FMODUnity.EventRef]
+    public string PlayerDamagedEvent = "";
+
     public void Awake()
     {
         canvas = GameObject.Find("Main Canvas");
@@ -67,6 +71,10 @@ public class HitBox : MonoBehaviour
                         Debug.Log(creator.name + " hits " + unit.name + " for " + damage + " damage");
                         int damageamount = Mathf.RoundToInt(damage * unit.defmod);
                         unit.hp -= damageamount;
+                        if (unit.name == "Player")
+                        {
+                            FMODUnity.RuntimeManager.PlayOneShot(PlayerDamagedEvent, transform.position);
+                        }
                         Vector3 knockbackdirection = Vector3.zero;
                         if (kbtype == KnockbackType.Directional)
                         {

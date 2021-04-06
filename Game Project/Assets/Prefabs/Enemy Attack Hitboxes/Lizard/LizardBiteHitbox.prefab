@@ -53,6 +53,9 @@ MonoBehaviour:
     m_Bits: 256
   creator: {fileID: 0}
   damage: 10
+  pierce: 1
   stundur: 0.3
+  kbtype: 0
   knockbackAmount: 0
   knockbackdir: {x: 0, y: 0, z: 0}
+  PlayerDamagedEvent: event:/Player/PlayerDamaged

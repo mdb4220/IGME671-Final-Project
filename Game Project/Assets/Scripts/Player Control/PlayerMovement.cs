@@ -60,6 +60,15 @@ public class PlayerMovement : MovementScript
 
     PlayerSpellManager spellManager;
 
+    //Sound Effects
+    [FMODUnity.EventRef]
+    public string FootStepEvent = "";
+    [FMODUnity.EventRef]
+    public string JumpEvent = "";
+    [FMODUnity.EventRef]
+    public string RollEvent = "";
+    
+
     //create input
     private void Awake()
     {
@@ -572,6 +581,7 @@ public class PlayerMovement : MovementScript
             }
             vspeed = jumpspeed;
             controller.Move(new Vector3(0f, 0f, 0f));
+            FMODUnity.RuntimeManager.PlayOneShot(JumpEvent, transform.position);
         }
     }
 
@@ -580,6 +590,7 @@ public class PlayerMovement : MovementScript
         if (actionable && stun == 0)
         {
             BeginRoll();
+            FMODUnity.RuntimeManager.PlayOneShot(RollEvent, transform.position);
         }
         else if (queueable && stun == 0)
         {
@@ -821,5 +832,10 @@ public class PlayerMovement : MovementScript
         {
             Destroy(currentmeleehitbox);
         }
+    }
+
+    public void MakeStepSound()
+    {
+        FMODUnity.RuntimeManager.PlayOneShot(FootStepEvent, transform.position);
     }
 }

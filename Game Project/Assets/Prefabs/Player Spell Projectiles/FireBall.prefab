@@ -223,6 +223,7 @@ MonoBehaviour:
   kbtype: 2
   knockbackAmount: 15
   knockbackdir: {x: 0, y: 0, z: 0}
+  PlayerDamagedEvent: event:/Player/PlayerDamaged
 --- !u!114 &5042927878922750427
 MonoBehaviour:
   m_ObjectHideFlags: 0
