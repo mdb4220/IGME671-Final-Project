@@ -1,0 +1,220 @@
+Using pre-set license
+Built from '2020.2/staging' branch; Version is '2020.2.3f1 (8ff31bc5bf5b) revision 9433883'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home; OS build 19042.867; Version 2009; 64bit' Language: 'en' Physical Memory: 32718 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.2.3f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/User/Documents/GitHub/IGME671-Final-Project/Game Project
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+55034
+Successfully changed project path to: C:/Users/User/Documents/GitHub/IGME671-Final-Project/Game Project
+C:/Users/User/Documents/GitHub/IGME671-Final-Project/Game Project
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 57.53 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.2.3f1 (8ff31bc5bf5b)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.2.3f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/User/Documents/GitHub/IGME671-Final-Project/Game Project/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3080 (ID=0x2206)
+    Vendor:   
+    VRAM:     10077 MB
+    Driver:   27.21.14.6192
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.2.3f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.2.3f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.2.3f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56028
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001664 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 46.30 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.774 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.003855 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 41.63 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+RefreshInfo: StopAssetImportingV2(NoUpdateAssetOptions) scanfilter: 
+RefreshProfiler: Total: 0.000ms
+Mono: successfully reloaded assembly
+- Completed reload, in  0.782 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.84 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 61.3 MB.
+System memory in use after: 61.4 MB.
+
+Unloading 93 unused Assets to reduce memory usage. Loaded Objects now: 2346.
+Total: 2.290800 ms (FindLiveObjects: 0.236800 ms CreateObjectMapping: 0.047200 ms MarkObjects: 1.920100 ms  DeleteObjects: 0.085600 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Plugins/FMOD/Resources/FMODStudioSettings.asset
+  artifactKey: Guid(d6ac8bc1d18f3744cb9df90822420efb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/FMOD/Resources/FMODStudioSettings.asset using Guid(d6ac8bc1d18f3744cb9df90822420efb) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [FMOD] Cannot find properties for platform default, creating default properties
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+UnityEngine.Debug:LogFormat (string,object[])
+FMODUnity.Settings:AffirmPlatformProperties (FMODUnity.Platform) (at Assets/Plugins/FMOD/src/Runtime/Settings.cs:735)
+FMODUnity.Settings:AddMissingPlatforms () (at Assets/Plugins/FMOD/src/Runtime/Settings.cs:447)
+FMODUnity.Settings:OnEnable () (at Assets/Plugins/FMOD/src/Runtime/Settings.cs:803)
+
+(Filename: Assets/Plugins/FMOD/src/Runtime/Settings.cs Line: 735)
+
+[FMOD] Cannot find properties for platform playInEditor, creating default properties
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:LogFormat (UnityEngine.LogType,string,object[])
+UnityEngine.Debug:LogFormat (string,object[])
+FMODUnity.Settings:AffirmPlatformProperties (FMODUnity.Platform) (at Assets/Plugins/FMOD/src/Runtime/Settings.cs:735)
+FMODUnity.Settings:AddMissingPlatforms () (at Assets/Plugins/FMOD/src/Runtime/Settings.cs:448)
+FMODUnity.Settings:OnEnable () (at Assets/Plugins/FMOD/src/Runtime/Settings.cs:803)
+
+(Filename: Assets/Plugins/FMOD/src/Runtime/Settings.cs Line: 735)
+
+ -> (artifact id: '8d413659d06fadc6c43a0ac45b91da0f') in 0.040585 seconds
+  Import took 0.043444 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004071 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.89 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+RefreshInfo: StopAssetImportingV2(NoUpdateAssetOptions) scanfilter: 
+RefreshProfiler: Total: 0.000ms
+Mono: successfully reloaded assembly
+- Completed reload, in  0.697 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.93 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 61.5 MB.
+System memory in use after: 61.6 MB.
+
+Unloading 83 unused Assets to reduce memory usage. Loaded Objects now: 2348.
+Total: 2.022700 ms (FindLiveObjects: 0.232700 ms CreateObjectMapping: 0.044500 ms MarkObjects: 1.709300 ms  DeleteObjects: 0.035200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004064 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.98 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+RefreshInfo: StopAssetImportingV2(NoUpdateAssetOptions) scanfilter: 
+RefreshProfiler: Total: 0.000ms
+Mono: successfully reloaded assembly
+- Completed reload, in  0.715 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.93 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 61.6 MB.
+System memory in use after: 61.7 MB.
+
+Unloading 83 unused Assets to reduce memory usage. Loaded Objects now: 2350.
+Total: 2.191400 ms (FindLiveObjects: 0.264700 ms CreateObjectMapping: 0.053900 ms MarkObjects: 1.839100 ms  DeleteObjects: 0.032500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 828.532643 seconds.
+  path: Assets/Shaders
+  artifactKey: Guid(03825c68f753c4441963b1f82d020dda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders using Guid(03825c68f753c4441963b1f82d020dda) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf61e12c009b03a040718df5cfb740c4') in 0.007237 seconds
+  Import took 0.010052 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 41.281524 seconds.
+  path: Assets/Editor Default Resources
+  artifactKey: Guid(614a438657d532541a668347dba0ee0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Editor Default Resources using Guid(614a438657d532541a668347dba0ee0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e5de4e0c8a8b5b3aeac79f0cd7b19fc') in 0.005988 seconds
+  Import took 0.008769 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 82.719673 seconds.
+  path: Assets/Prefabs
+  artifactKey: Guid(83c2917b239070d4a82006b0a1e5f89d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs using Guid(83c2917b239070d4a82006b0a1e5f89d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f03502bf49a953e4c356d898e1b1d0ba') in 0.006425 seconds
+  Import took 0.009210 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.301493 seconds.
+  path: Assets/Plugins
+  artifactKey: Guid(8e1ef26051e4e4a4f9f19e457070f8fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins using Guid(8e1ef26051e4e4a4f9f19e457070f8fd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa37c5c8b63a8b779210ec4d062945c0') in 0.005786 seconds
+  Import took 0.008571 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.143601 seconds.
+  path: Assets/Plugins/FMOD
+  artifactKey: Guid(05947bbfe2cdecb4fa9fc4b7d2f89d0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/FMOD using Guid(05947bbfe2cdecb4fa9fc4b7d2f89d0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5364afaca980bc1e77749e42b06f655') in 0.005603 seconds
+  Import took 0.008361 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.979771 seconds.
+  path: Assets/Plugins/FMOD/FMODUnity.asmdef
+  artifactKey: Guid(0c752da273b17c547ae705acf0f2adf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/FMOD/FMODUnity.asmdef using Guid(0c752da273b17c547ae705acf0f2adf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5f9039148fa5e5c4eb37a5322c0ed23') in 0.006896 seconds
+  Import took 0.009658 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000392 seconds.
+  path: Assets/Plugins/FMOD/FMODUnity.asmdef
+  artifactKey: Guid(0c752da273b17c547ae705acf0f2adf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/FMOD/FMODUnity.asmdef using Guid(0c752da273b17c547ae705acf0f2adf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5f9039148fa5e5c4eb37a5322c0ed23') in 0.002118 seconds
+  Import took 0.004464 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.088777 seconds.
+  path: Assets/Editor Default Resources/FMOD
+  artifactKey: Guid(0098ee476320b9141b1c92a2ddc5f9fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Editor Default Resources/FMOD using Guid(0098ee476320b9141b1c92a2ddc5f9fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28ae4d964abcdf7f00f43eb4830d3055') in 0.001950 seconds
+  Import took 0.004740 seconds .
+
