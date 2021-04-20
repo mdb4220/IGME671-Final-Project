@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="ParameterPreset" id="{69bbf2e6-77ab-4c5a-bbea-923ce3cf4aca}">
+		<property name="name">
+			<value>AttackPower</value>
+		</property>
+		<relationship name="folder">
+			<destination>{ad42c90a-6ce5-4a92-9496-d24f18187346}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{a4f23f7e-4a0d-4a13-9689-653391547435}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{a4f23f7e-4a0d-4a13-9689-653391547435}">
+		<property name="maximum">
+			<value>100</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

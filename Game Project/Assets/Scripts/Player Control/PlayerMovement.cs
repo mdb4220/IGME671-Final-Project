@@ -67,7 +67,14 @@ public class PlayerMovement : MovementScript
     public string JumpEvent = "";
     [FMODUnity.EventRef]
     public string RollEvent = "";
-    
+    [FMODUnity.EventRef]
+    public string SlashEvent = "";
+
+    [FMODUnity.EventRef]
+    public string FireEvent = "";
+    [FMODUnity.EventRef]
+    public string EarthquakeEvent = "";
+
 
     //create input
     private void Awake()
@@ -280,7 +287,7 @@ public class PlayerMovement : MovementScript
 
         for (int i = 0; i < hits.Length; i++)
         {
-            if(hits[i].transform.CompareTag("Enemy"))
+            if (hits[i].transform.CompareTag("Enemy"))
             {
                 Vector3 dirtoout = transform.position - hits[i].transform.position;
                 dirtoout = new Vector3(dirtoout.x, 0f, dirtoout.z);
@@ -292,7 +299,7 @@ public class PlayerMovement : MovementScript
                 Vector3 outpoint = hits[i].collider.ClosestPointOnBounds(hits[i].transform.position + (dirtoout * 9999));
 
                 float disttopush = (Vector3.Distance(transform.position, outpoint) + controller.radius) * 4f;
-                
+
 
                 pushout += dirtoout.normalized * disttopush;
             }
@@ -301,7 +308,7 @@ public class PlayerMovement : MovementScript
         controller.Move((vel + pushout + knockback) * Time.deltaTime);
 
 
-        
+
     }
 
     private void AirAttackMovement()
@@ -515,8 +522,8 @@ public class PlayerMovement : MovementScript
 
             anim.SetBool("Onground", false);
 
-            
-            
+
+
         }
         if ((controller.collisionFlags & CollisionFlags.Above) != 0 && vspeed > 0.1)
         {
@@ -572,7 +579,7 @@ public class PlayerMovement : MovementScript
     //control functions
     private void Jump()
     {
-        
+
         if ((controller.isGrounded || extrajump) && !rolling & !attacking && stun == 0)
         {
             if (!controller.isGrounded)
@@ -707,14 +714,14 @@ public class PlayerMovement : MovementScript
     {
 
         tempspeed = attackmovespeed;
-        
+
 
         if (move.magnitude > 0)
         {
             targetAngle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg + cam.eulerAngles.y;
         }
 
-        
+
     }
 
     public void ResetActionVariables()
@@ -748,7 +755,7 @@ public class PlayerMovement : MovementScript
         {
             vspeed += airattackpushamount;
         }
-        
+
 
         if (move.magnitude > 0)
         {
@@ -795,7 +802,7 @@ public class PlayerMovement : MovementScript
         {
             GameObject proj = Instantiate(spellManager.currentspell.prefab, new Vector3(transform.position.x, transform.position.y + .5f, transform.position.z), transform.rotation);
             proj.GetComponent<HitBox>().creator = unit;
-        }  
+        }
     }
 
     public void CastEnd()
@@ -819,12 +826,14 @@ public class PlayerMovement : MovementScript
     }
 
 
-    public void CreateHitBox()
+    public void CreateHitBox(int damage)
     {
         currentmeleehitbox = Instantiate(prefabHitBox, transform.position, transform.rotation, transform);
         currentmeleehitbox.GetComponent<HitBox>().creator = unit;
         currentmeleehitbox.GetComponent<HitBox>().knockbackAmount = 20f;
         currentmeleehitbox.GetComponent<HitBox>().knockbackdir = transform.forward;
+        currentmeleehitbox.GetComponent<HitBox>().damage = damage;
+        MakeSlashSound();
     }
     public void DestroyHitBox()
     {
@@ -837,5 +846,20 @@ public class PlayerMovement : MovementScript
     public void MakeStepSound()
     {
         FMODUnity.RuntimeManager.PlayOneShot(FootStepEvent, transform.position);
+    }
+
+    public void MakeSlashSound()
+    {
+        FMODUnity.RuntimeManager.PlayOneShot(SlashEvent, transform.position);
+    }
+
+    public void MakeFireSound()
+    {
+        FMODUnity.RuntimeManager.PlayOneShot(FireEvent, transform.position);
+    }
+
+    public void MakeEarthquakeSound()
+    {
+        FMODUnity.RuntimeManager.PlayOneShot(EarthquakeEvent, transform.position);
     }
 }

@@ -217,13 +217,16 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   creator: {fileID: 0}
-  damage: 15
+  damage: 40
   pierce: 0
   stundur: 0.5
   kbtype: 2
   knockbackAmount: 15
   knockbackdir: {x: 0, y: 0, z: 0}
   PlayerDamagedEvent: event:/Player/PlayerDamaged
+  ButterflyDamagedEvent: event:/Butterfly Enemy/ButterflyDamaged
+  LizardDamagedEvent: event:/Lizard Enemy/LizardDamaged
+  HitEvent: event:/Generic Sound Effects/Hit
 --- !u!114 &5042927878922750427
 MonoBehaviour:
   m_ObjectHideFlags: 0

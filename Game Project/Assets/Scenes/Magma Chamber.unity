@@ -2274,7 +2274,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attenuationObject: {fileID: 0}
+  attenuationObject: {fileID: 820733622}
   ListenerNumber: -1
 --- !u!20 &820733624
 Camera:
@@ -4480,6 +4480,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9137856363831231969, guid: 0b642ccef142c8142b9e813d2c926410,
+        type: 3}
+      propertyPath: FireEvent
+      value: event:/Generic Sound Effects/Fireball
+      objectReference: {fileID: 0}
+    - target: {fileID: 9137856363831231969, guid: 0b642ccef142c8142b9e813d2c926410,
+        type: 3}
+      propertyPath: SlashEvent
+      value: event:/Player/PlayerSlash
+      objectReference: {fileID: 0}
+    - target: {fileID: 9137856363831231969, guid: 0b642ccef142c8142b9e813d2c926410,
+        type: 3}
+      propertyPath: EarthquakeEvent
+      value: event:/Generic Sound Effects/Earthquake
       objectReference: {fileID: 0}
     - target: {fileID: 9137856363831231972, guid: 0b642ccef142c8142b9e813d2c926410,
         type: 3}

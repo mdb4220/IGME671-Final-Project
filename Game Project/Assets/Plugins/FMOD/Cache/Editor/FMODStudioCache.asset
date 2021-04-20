@@ -1,5 +1,28 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8566473861580526312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Generic Sound Effects/Earthquake
+  m_EditorClassIdentifier: 
+  Path: event:/Generic Sound Effects/Earthquake
+  guid: f5eba56b11c98a4bb48fa3a7c3a99547
+  Banks:
+  - {fileID: -8518444569089906369}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &-8518444569089906369
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15,10 +38,122 @@ MonoBehaviour:
   Path: FMOD/final_proj_fmod/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637533288653101673
+  lastModified: 637545064469251432
   LoadResult: 0
   FileSizes: []
   Exists: 1
+--- !u!114 &-8393448418184689976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Interface/SwitchSpell
+  m_EditorClassIdentifier: 
+  Path: event:/Interface/SwitchSpell
+  guid: 963d939422d25c44b131847e32bd0a63
+  Banks:
+  - {fileID: -8518444569089906369}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-8207994759640413482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/PlayerSlash
+  m_EditorClassIdentifier: 
+  Path: event:/Player/PlayerSlash
+  guid: 590ca9129a2a064f916337008b571576
+  Banks:
+  - {fileID: -8518444569089906369}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-6542621410561079064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Lizard Enemy/LizardFootstep
+  m_EditorClassIdentifier: 
+  Path: event:/Lizard Enemy/LizardFootstep
+  guid: e490aa0411c9ce4b9f698e3218938cff
+  Banks:
+  - {fileID: -8518444569089906369}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-6012778692621275783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Hit/AttackPower
+  m_EditorClassIdentifier: 
+  Name: AttackPower
+  Min: 0
+  Max: 100
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 0
+--- !u!114 &-5624826586296897719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Lizard Enemy/LizardDamaged
+  m_EditorClassIdentifier: 
+  Path: event:/Lizard Enemy/LizardDamaged
+  guid: 7bbae1c861d94741bfbc70e347ba7190
+  Banks:
+  - {fileID: -8518444569089906369}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-5606397435721300854
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65,6 +200,116 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &-4859183095253359278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Generic Sound Effects/Hit
+  m_EditorClassIdentifier: 
+  Path: event:/Generic Sound Effects/Hit
+  guid: 3a6f65eff8a59445930e93e45e9f928a
+  Banks:
+  - {fileID: -8518444569089906369}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: 4528171992167030110}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-4233934801078560669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Hit/AttackPower
+  m_EditorClassIdentifier: 
+  Name: AttackPower
+  Min: 0
+  Max: 100
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
+--- !u!114 &-4205271440685644183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Generic Sound Effects/Fireball
+  m_EditorClassIdentifier: 
+  Path: event:/Generic Sound Effects/Fireball
+  guid: 72293f63072be34bad2cd3b37985813d
+  Banks:
+  - {fileID: -8518444569089906369}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 80
+  Length: 0
+--- !u!114 &-3053799855481949006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Butterfly Enemy/ButterflyDamaged
+  m_EditorClassIdentifier: 
+  Path: event:/Butterfly Enemy/ButterflyDamaged
+  guid: 63d9c72053030a49aaf670b210f50df5
+  Banks:
+  - {fileID: -8518444569089906369}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-929956721220277469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Hit/AttackPower
+  m_EditorClassIdentifier: 
+  Name: AttackPower
+  Min: 0
+  Max: 100
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -85,12 +330,22 @@ MonoBehaviour:
   - {fileID: -5606397435721300854}
   - {fileID: -5322028780817166271}
   - {fileID: 6839064155105159315}
+  - {fileID: 3878426388241752982}
+  - {fileID: -4859183095253359278}
+  - {fileID: -8207994759640413482}
+  - {fileID: -3053799855481949006}
+  - {fileID: -4205271440685644183}
+  - {fileID: -5624826586296897719}
+  - {fileID: -8393448418184689976}
+  - {fileID: 4732286552221442782}
+  - {fileID: -6542621410561079064}
+  - {fileID: -8566473861580526312}
   EditorParameters: []
   MasterBanks:
   - {fileID: -8518444569089906369}
   StringsBanks:
   - {fileID: 2242734330934652801}
-  stringsBankWriteTime: 637533288653121692
+  stringsBankWriteTime: 637545064469271451
   cacheVersion: 6
 --- !u!114 &2242734330934652801
 MonoBehaviour:
@@ -107,12 +362,78 @@ MonoBehaviour:
   Path: FMOD/final_proj_fmod/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637533288653121692
+  lastModified: 637545064469271451
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 878
+    Value: 1448
   Exists: 1
+--- !u!114 &3878426388241752982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Lizard Enemy/LizardBite
+  m_EditorClassIdentifier: 
+  Path: event:/Lizard Enemy/LizardBite
+  guid: 1ecfdff0ba775b4caeb4dbd9e5bcf105
+  Banks:
+  - {fileID: -8518444569089906369}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &4528171992167030110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Hit/AttackPower
+  m_EditorClassIdentifier: 
+  Name: AttackPower
+  Min: 0
+  Max: 100
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
+--- !u!114 &4732286552221442782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Butterfly Enemy/ButterflyWingFlap
+  m_EditorClassIdentifier: 
+  Path: event:/Butterfly Enemy/ButterflyWingFlap
+  guid: d44104922ce07d4a9cc19fe379962dad
+  Banks:
+  - {fileID: -8518444569089906369}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 40
+  Length: 0
 --- !u!114 &5472945624445062001
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -159,3 +480,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &7530204975472827914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Hit/AttackPower
+  m_EditorClassIdentifier: 
+  Name: AttackPower
+  Min: 0
+  Max: 100
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 0

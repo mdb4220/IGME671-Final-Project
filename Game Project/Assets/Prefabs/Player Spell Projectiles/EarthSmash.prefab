@@ -141,6 +141,10 @@ MonoBehaviour:
   kbtype: 1
   knockbackAmount: 60
   knockbackdir: {x: 0, y: 0, z: 0}
+  PlayerDamagedEvent: 
+  ButterflyDamagedEvent: event:/Butterfly Enemy/ButterflyDamaged
+  LizardDamagedEvent: event:/Lizard Enemy/LizardDamaged
+  HitEvent: event:/Generic Sound Effects/Hit
 --- !u!114 &987525451798275795
 MonoBehaviour:
   m_ObjectHideFlags: 0

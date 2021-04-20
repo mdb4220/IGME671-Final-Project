@@ -351,7 +351,7 @@ ModelImporter:
         data: 
         objectReferenceParameter: {instanceID: 0}
         floatParameter: 0
-        intParameter: 0
+        intParameter: 20
         messageOptions: 0
       - time: 0.1698184
         functionName: BecomeQueueable
@@ -436,7 +436,7 @@ ModelImporter:
         data: 
         objectReferenceParameter: {instanceID: 0}
         floatParameter: 0
-        intParameter: 0
+        intParameter: 25
         messageOptions: 0
       - time: 0.22583926
         functionName: DestroyHitBox
@@ -514,7 +514,7 @@ ModelImporter:
         data: 
         objectReferenceParameter: {instanceID: 0}
         floatParameter: 0
-        intParameter: 0
+        intParameter: 40
         messageOptions: 0
       - time: 0.46153846
         functionName: DestroyHitBox
@@ -592,7 +592,7 @@ ModelImporter:
         data: 
         objectReferenceParameter: {instanceID: 0}
         floatParameter: 0
-        intParameter: 0
+        intParameter: 100
         messageOptions: 0
       - time: 0.3899204
         functionName: DestroyHitBox
@@ -693,6 +693,13 @@ ModelImporter:
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
+      - time: 0.3402367
+        functionName: MakeFireSound
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}
@@ -766,6 +773,13 @@ ModelImporter:
         messageOptions: 0
       - time: 1
         functionName: CastEnd
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.56804734
+        functionName: MakeEarthquakeSound
         data: 
         objectReferenceParameter: {instanceID: 0}
         floatParameter: 0

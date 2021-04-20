@@ -114,8 +114,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: Butterfly
-  hp: 80
-  maxhp: 80
+  hp: 185
+  maxhp: 185
   attackmod: 1
   defmod: 1
   knockbackres: 0.5
@@ -156,6 +156,8 @@ MonoBehaviour:
   animSmoothing: 0.1
   prefabHitBox: {fileID: 8300505579730144962, guid: 20b70838376cd8f43a00f76eb7d7bae8,
     type: 3}
+  FootStepEvent: event:/Butterfly Enemy/ButterflyWingFlap
+  BiteEvent: event:/Generic Sound Effects/Fireball
 --- !u!143 &106562816920812749
 CharacterController:
   m_ObjectHideFlags: 0
@@ -228,6 +230,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 7b299b0ca9d97174eb454937cf2172af,
         type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7b299b0ca9d97174eb454937cf2172af,
+        type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -243,6 +250,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7b299b0ca9d97174eb454937cf2172af,
         type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 7b299b0ca9d97174eb454937cf2172af,
+        type: 3}
       propertyPath: m_LocalRotation.x
       value: -0
       objectReference: {fileID: 0}
@@ -255,16 +267,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalRotation.z
       value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 7b299b0ca9d97174eb454937cf2172af,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 7b299b0ca9d97174eb454937cf2172af,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7b299b0ca9d97174eb454937cf2172af,
         type: 3}

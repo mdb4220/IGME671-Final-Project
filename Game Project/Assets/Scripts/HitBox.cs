@@ -31,6 +31,15 @@ public class HitBox : MonoBehaviour
     //Sound
     [FMODUnity.EventRef]
     public string PlayerDamagedEvent = "";
+    [FMODUnity.EventRef]
+    public string ButterflyDamagedEvent = "";
+    [FMODUnity.EventRef]
+    public string LizardDamagedEvent = "";
+
+    [FMODUnity.EventRef]
+    public string HitEvent = "";
+
+    FMOD.Studio.PARAMETER_ID damageParameterId;
 
     public void Awake()
     {
@@ -44,6 +53,11 @@ public class HitBox : MonoBehaviour
         {
             creator.name = "Something";
         }
+
+        FMOD.Studio.EventDescription damageEventDescription = FMODUnity.RuntimeManager.GetEventDescription(HitEvent);
+        FMOD.Studio.PARAMETER_DESCRIPTION damageParameterDescription;
+        damageEventDescription.getParameterDescriptionByName("AttackPower", out damageParameterDescription);
+        damageParameterId = damageParameterDescription.id;
     }
 
 
@@ -71,9 +85,25 @@ public class HitBox : MonoBehaviour
                         Debug.Log(creator.name + " hits " + unit.name + " for " + damage + " damage");
                         int damageamount = Mathf.RoundToInt(damage * unit.defmod);
                         unit.hp -= damageamount;
+
+
+                        FMOD.Studio.EventInstance hit = FMODUnity.RuntimeManager.CreateInstance(HitEvent);
+                        hit.setParameterByID(damageParameterId, damageamount);
+                        hit.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
+                        hit.start();
+                        hit.release();
+
                         if (unit.name == "Player")
                         {
                             FMODUnity.RuntimeManager.PlayOneShot(PlayerDamagedEvent, transform.position);
+                        }
+                        if (unit.name == "Lizard")
+                        {
+                            FMODUnity.RuntimeManager.PlayOneShot(LizardDamagedEvent, transform.position);
+                        }
+                        if (unit.name == "Butterfly")
+                        {
+                            FMODUnity.RuntimeManager.PlayOneShot(ButterflyDamagedEvent, transform.position);
                         }
                         Vector3 knockbackdirection = Vector3.zero;
                         if (kbtype == KnockbackType.Directional)

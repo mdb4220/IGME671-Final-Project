@@ -50,6 +50,12 @@ public class BasicEnemyAI : MovementScript
     public GameObject prefabHitBox;
     GameObject currentmeleehitbox = null;
 
+    //Sound Effects
+    [FMODUnity.EventRef]
+    public string FootStepEvent = "";
+    [FMODUnity.EventRef]
+    public string BiteEvent = "";
+
 
     private void Awake()
     {
@@ -362,6 +368,7 @@ public class BasicEnemyAI : MovementScript
     {
         GameObject newProj = Instantiate(prefabHitBox, transform.position, transform.rotation);
         newProj.GetComponent<HitBox>().creator = unit;
+        MakeBiteSound();
     }
 
     public void CreateHitBox()
@@ -370,6 +377,7 @@ public class BasicEnemyAI : MovementScript
         currentmeleehitbox.GetComponent<HitBox>().creator = unit;
         currentmeleehitbox.GetComponent<HitBox>().knockbackAmount = 10f;
         currentmeleehitbox.GetComponent<HitBox>().knockbackdir = transform.forward;
+        MakeBiteSound();
     }
     public void DestroyHitBox()
     {
@@ -377,5 +385,15 @@ public class BasicEnemyAI : MovementScript
         {
             Destroy(currentmeleehitbox);
         }
+    }
+
+    public void MakeStepSound()
+    {
+        FMODUnity.RuntimeManager.PlayOneShot(FootStepEvent, transform.position);
+    }
+
+    public void MakeBiteSound()
+    {
+        FMODUnity.RuntimeManager.PlayOneShot(BiteEvent, transform.position);
     }
 }
