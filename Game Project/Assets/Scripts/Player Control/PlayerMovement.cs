@@ -75,6 +75,13 @@ public class PlayerMovement : MovementScript
     [FMODUnity.EventRef]
     public string EarthquakeEvent = "";
 
+    [FMODUnity.EventRef]
+    public string LavaEvent = "";
+    [FMODUnity.EventRef]
+    public string CrackleEvent = "";
+    [FMODUnity.EventRef]
+    public string EarthCrackEvent = "";
+
 
     //create input
     private void Awake()
@@ -113,6 +120,10 @@ public class PlayerMovement : MovementScript
 
     private void Update()
     {
+        FMODUnity.RuntimeManager.PlayOneShot(LavaEvent, transform.position);
+        FMODUnity.RuntimeManager.PlayOneShot(CrackleEvent, transform.position);
+        FMODUnity.RuntimeManager.PlayOneShot(EarthCrackEvent, transform.position);
+
 
         //horizontal movement
         float horizontal = move.x;

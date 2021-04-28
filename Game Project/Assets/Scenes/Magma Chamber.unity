@@ -4488,8 +4488,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9137856363831231969, guid: 0b642ccef142c8142b9e813d2c926410,
         type: 3}
+      propertyPath: LavaEvent
+      value: event:/Ambiance/LavaAmbient
+      objectReference: {fileID: 0}
+    - target: {fileID: 9137856363831231969, guid: 0b642ccef142c8142b9e813d2c926410,
+        type: 3}
       propertyPath: SlashEvent
       value: event:/Player/PlayerSlash
+      objectReference: {fileID: 0}
+    - target: {fileID: 9137856363831231969, guid: 0b642ccef142c8142b9e813d2c926410,
+        type: 3}
+      propertyPath: CrackleEvent
+      value: event:/Ambiance/LavaBurn
+      objectReference: {fileID: 0}
+    - target: {fileID: 9137856363831231969, guid: 0b642ccef142c8142b9e813d2c926410,
+        type: 3}
+      propertyPath: EarthCrackEvent
+      value: event:/Ambiance/StoneCrack
       objectReference: {fileID: 0}
     - target: {fileID: 9137856363831231969, guid: 0b642ccef142c8142b9e813d2c926410,
         type: 3}
@@ -4511,6 +4526,11 @@ PrefabInstance:
       propertyPath: spelltext
       value: 
       objectReference: {fileID: 488429105}
+    - target: {fileID: 9137856363831231972, guid: 0b642ccef142c8142b9e813d2c926410,
+        type: 3}
+      propertyPath: SwitchSpellEvent
+      value: event:/Interface/SwitchSpell
+      objectReference: {fileID: 0}
     - target: {fileID: 9137856363831231982, guid: 0b642ccef142c8142b9e813d2c926410,
         type: 3}
       propertyPath: m_Name

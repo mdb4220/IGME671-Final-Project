@@ -14,6 +14,9 @@ public class PlayerSpellManager : MonoBehaviour
     public Image leftswap;
     public Image rightswap;
 
+    [FMODUnity.EventRef]
+    public string SwitchSpellEvent = "";
+
     public void Awake()
     {
         currentspell = spells[0];
@@ -26,6 +29,7 @@ public class PlayerSpellManager : MonoBehaviour
     {
         if (currentspellind < spells.Count - 1)
         {
+            FMODUnity.RuntimeManager.PlayOneShot(SwitchSpellEvent, transform.position);
             currentspellind++;
             currentspell = spells[currentspellind];
             spelltext.text = currentspell.name;
@@ -51,6 +55,7 @@ public class PlayerSpellManager : MonoBehaviour
     {
         if (currentspellind > 0)
         {
+            FMODUnity.RuntimeManager.PlayOneShot(SwitchSpellEvent, transform.position);
             currentspellind--;
             currentspell = spells[currentspellind];
             spelltext.text = currentspell.name;

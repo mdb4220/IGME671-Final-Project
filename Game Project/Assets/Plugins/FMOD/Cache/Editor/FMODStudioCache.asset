@@ -38,7 +38,7 @@ MonoBehaviour:
   Path: FMOD/final_proj_fmod/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637545064469251432
+  lastModified: 637551545535499090
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -88,6 +88,26 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &-6938706332674907348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Hit/AttackPower
+  m_EditorClassIdentifier: 
+  Name: AttackPower
+  Min: 0
+  Max: 100
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 0
 --- !u!114 &-6542621410561079064
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -131,6 +151,29 @@ MonoBehaviour:
     data1: 0
     data2: 0
   Exists: 0
+--- !u!114 &-5782883421873962449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambiance/LavaAmbient
+  m_EditorClassIdentifier: 
+  Path: event:/Ambiance/LavaAmbient
+  guid: 9c10d9b280b5b843b16ee46d3b1420e9
+  Banks:
+  - {fileID: -8518444569089906369}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &-5624826586296897719
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -220,7 +263,7 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: 4528171992167030110}
+  - {fileID: -3423863561706355568}
   MinDistance: 1
   MaxDistance: 20
   Length: 0
@@ -266,6 +309,49 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 80
+  Length: 0
+--- !u!114 &-3423863561706355568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Hit/AttackPower
+  m_EditorClassIdentifier: 
+  Name: AttackPower
+  Min: 0
+  Max: 100
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
+--- !u!114 &-3126620749245544056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambiance/LavaBurn
+  m_EditorClassIdentifier: 
+  Path: event:/Ambiance/LavaBurn
+  guid: 957e810c4119824e9c83884d77cf20af
+  Banks:
+  - {fileID: -8518444569089906369}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
   Length: 0
 --- !u!114 &-3053799855481949006
 MonoBehaviour:
@@ -340,13 +426,39 @@ MonoBehaviour:
   - {fileID: 4732286552221442782}
   - {fileID: -6542621410561079064}
   - {fileID: -8566473861580526312}
+  - {fileID: 1826119867423123025}
+  - {fileID: -3126620749245544056}
+  - {fileID: -5782883421873962449}
   EditorParameters: []
   MasterBanks:
   - {fileID: -8518444569089906369}
   StringsBanks:
   - {fileID: 2242734330934652801}
-  stringsBankWriteTime: 637545064469271451
+  stringsBankWriteTime: 637551545535529116
   cacheVersion: 6
+--- !u!114 &1826119867423123025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Ambiance/StoneCrack
+  m_EditorClassIdentifier: 
+  Path: event:/Ambiance/StoneCrack
+  guid: 451572ddedb48345a8b576daefa7d72b
+  Banks:
+  - {fileID: -8518444569089906369}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &2242734330934652801
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -362,11 +474,11 @@ MonoBehaviour:
   Path: FMOD/final_proj_fmod/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637545064469271451
+  lastModified: 637551545535529116
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 1448
+    Value: 1600
   Exists: 1
 --- !u!114 &3878426388241752982
 MonoBehaviour:
