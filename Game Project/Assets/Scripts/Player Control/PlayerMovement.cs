@@ -82,6 +82,9 @@ public class PlayerMovement : MovementScript
     [FMODUnity.EventRef]
     public string EarthCrackEvent = "";
 
+    [FMODUnity.EventRef]
+    public string LandEvent = "";
+
 
     //create input
     private void Awake()
@@ -261,6 +264,10 @@ public class PlayerMovement : MovementScript
         if (controller.isGrounded)
         {
             vspeed = -2f;
+            if(!anim.GetBool("Onground"))
+            {
+                FMODUnity.RuntimeManager.PlayOneShot(LandEvent, transform.position);
+            }
             anim.SetBool("Onground", true);
         }
         else

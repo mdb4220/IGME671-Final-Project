@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{c23e9849-b04f-4c7a-89f9-4accd27b2baf}">
+		<property name="assetPath">
+			<value>PlayerLand.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.32761904761904764</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{d62ef5a1-ae80-420f-8143-95d004eacd5a}</destination>
+		</relationship>
+	</object>
+</objects>

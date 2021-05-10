@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{1801493c-29fa-49bf-8578-a1a19c1129e1}">
+		<property name="assetPath">
+			<value>ButterflyDefeated.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>1.4338095238095239</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{d62ef5a1-ae80-420f-8143-95d004eacd5a}</destination>
+		</relationship>
+	</object>
+</objects>

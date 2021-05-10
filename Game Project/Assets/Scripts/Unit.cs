@@ -17,11 +17,16 @@ public class Unit : MonoBehaviour
 
     public MovementScript movescript;
 
+    [FMODUnity.EventRef]
+    public string defeatEvent = "";
+
     public void Update()
     {
         if(hp <= 0)
         {
+            FMODUnity.RuntimeManager.PlayOneShot(defeatEvent, transform.position);
             Destroy(gameObject);
+
         }
     }
 }

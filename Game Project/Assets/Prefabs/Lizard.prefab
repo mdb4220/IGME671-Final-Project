@@ -102,6 +102,7 @@ MonoBehaviour:
   knockbackres: 0.5
   stunres: 1
   movescript: {fileID: 3229782072690006218}
+  defeatEvent: event:/Lizard Enemy/LizardDefeated
 --- !u!95 &1384195352356718521
 Animator:
   serializedVersion: 3

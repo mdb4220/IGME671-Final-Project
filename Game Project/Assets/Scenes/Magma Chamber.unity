@@ -4488,6 +4488,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9137856363831231969, guid: 0b642ccef142c8142b9e813d2c926410,
         type: 3}
+      propertyPath: LandEvent
+      value: event:/Player/PlayerLand
+      objectReference: {fileID: 0}
+    - target: {fileID: 9137856363831231969, guid: 0b642ccef142c8142b9e813d2c926410,
+        type: 3}
       propertyPath: LavaEvent
       value: event:/Ambiance/LavaAmbient
       objectReference: {fileID: 0}
@@ -4530,6 +4535,11 @@ PrefabInstance:
         type: 3}
       propertyPath: SwitchSpellEvent
       value: event:/Interface/SwitchSpell
+      objectReference: {fileID: 0}
+    - target: {fileID: 9137856363831231973, guid: 0b642ccef142c8142b9e813d2c926410,
+        type: 3}
+      propertyPath: defeatEvent
+      value: event:/Player/PlayerDefeated
       objectReference: {fileID: 0}
     - target: {fileID: 9137856363831231982, guid: 0b642ccef142c8142b9e813d2c926410,
         type: 3}

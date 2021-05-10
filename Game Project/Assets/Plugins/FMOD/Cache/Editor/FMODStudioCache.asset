@@ -38,7 +38,7 @@ MonoBehaviour:
   Path: FMOD/final_proj_fmod/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637551545535499090
+  lastModified: 637562672462104099
   LoadResult: 0
   FileSizes: []
   Exists: 1
@@ -79,6 +79,92 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Player/PlayerSlash
   guid: 590ca9129a2a064f916337008b571576
+  Banks:
+  - {fileID: -8518444569089906369}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-7935263665866147646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Lizard Enemy/LizardDefeated
+  m_EditorClassIdentifier: 
+  Path: event:/Lizard Enemy/LizardDefeated
+  guid: 8d170aa6a7ff2e4fbfc0c5aa8d0134b3
+  Banks:
+  - {fileID: -8518444569089906369}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-7896502681774927538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Hit/AttackPower
+  m_EditorClassIdentifier: 
+  Name: AttackPower
+  Min: 0
+  Max: 100
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 0
+--- !u!114 &-7811726305896304180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Hit/AttackPower
+  m_EditorClassIdentifier: 
+  Name: AttackPower
+  Min: 0
+  Max: 100
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 1
+--- !u!114 &-7308080605265977143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/PlayerLand
+  m_EditorClassIdentifier: 
+  Path: event:/Player/PlayerLand
+  guid: db3f06bf96a9d14f8a6b5d1e0335ef12
   Banks:
   - {fileID: -8518444569089906369}
   IsStream: 0
@@ -263,7 +349,7 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 1
   Parameters:
-  - {fileID: -3423863561706355568}
+  - {fileID: -7811726305896304180}
   MinDistance: 1
   MaxDistance: 20
   Length: 0
@@ -376,6 +462,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &-2086849196441148501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Hit/AttackPower
+  m_EditorClassIdentifier: 
+  Name: AttackPower
+  Min: 0
+  Max: 100
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 0
 --- !u!114 &-929956721220277469
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -429,13 +535,40 @@ MonoBehaviour:
   - {fileID: 1826119867423123025}
   - {fileID: -3126620749245544056}
   - {fileID: -5782883421873962449}
+  - {fileID: 79782230227417053}
+  - {fileID: -7935263665866147646}
+  - {fileID: 7382164136671417737}
+  - {fileID: -7308080605265977143}
   EditorParameters: []
   MasterBanks:
   - {fileID: -8518444569089906369}
   StringsBanks:
   - {fileID: 2242734330934652801}
-  stringsBankWriteTime: 637551545535529116
+  stringsBankWriteTime: 637562672462139132
   cacheVersion: 6
+--- !u!114 &79782230227417053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Player/PlayerDefeated
+  m_EditorClassIdentifier: 
+  Path: event:/Player/PlayerDefeated
+  guid: 5d78e47069d34342acf0f3f8f745af27
+  Banks:
+  - {fileID: -8518444569089906369}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &1826119867423123025
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -474,11 +607,11 @@ MonoBehaviour:
   Path: FMOD/final_proj_fmod/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637551545535529116
+  lastModified: 637562672462139132
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 1600
+    Value: 1908
   Exists: 1
 --- !u!114 &3878426388241752982
 MonoBehaviour:
@@ -569,6 +702,26 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &6771665988124302169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Hit/AttackPower
+  m_EditorClassIdentifier: 
+  Name: AttackPower
+  Min: 0
+  Max: 100
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 0
 --- !u!114 &6839064155105159315
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -591,6 +744,49 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
+  Length: 0
+--- !u!114 &7368504437385530954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Hit/AttackPower
+  m_EditorClassIdentifier: 
+  Name: AttackPower
+  Min: 0
+  Max: 100
+  Default: 0
+  ID:
+    data1: 0
+    data2: 0
+  Exists: 0
+--- !u!114 &7382164136671417737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Butterfly Enemy/ButterflyDefeated
+  m_EditorClassIdentifier: 
+  Path: event:/Butterfly Enemy/ButterflyDefeated
+  guid: d6248796de1d4c438273f3028c831695
+  Banks:
+  - {fileID: -8518444569089906369}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
   Length: 0
 --- !u!114 &7530204975472827914
 MonoBehaviour:

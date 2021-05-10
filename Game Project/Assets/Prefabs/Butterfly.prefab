@@ -121,6 +121,7 @@ MonoBehaviour:
   knockbackres: 0.5
   stunres: 1
   movescript: {fileID: 106562816920812751}
+  defeatEvent: event:/Butterfly Enemy/ButterflyDefeated
 --- !u!114 &106562816920812751
 MonoBehaviour:
   m_ObjectHideFlags: 0
